@@ -10,7 +10,38 @@
 		ACC9B7691FE335B3008DB465 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9B7681FE335B3008DB465 /* AppDelegate.swift */; };
 		ACC9B76B1FE335B3008DB465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC9B76A1FE335B3008DB465 /* Assets.xcassets */; };
 		ACC9B76E1FE335B3008DB465 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC9B76C1FE335B3008DB465 /* MainMenu.xib */; };
+		ACC9B77D1FE33618008DB465 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC9B77C1FE33618008DB465 /* Cocoa.framework */; };
+		ACC9B7801FE33618008DB465 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9B77F1FE33618008DB465 /* SafariExtensionHandler.swift */; };
+		ACC9B7821FE33618008DB465 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9B7811FE33618008DB465 /* SafariExtensionViewController.swift */; };
+		ACC9B7851FE33618008DB465 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC9B7831FE33618008DB465 /* SafariExtensionViewController.xib */; };
+		ACC9B7881FE33618008DB465 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = ACC9B7871FE33618008DB465 /* script.js */; };
+		ACC9B78E1FE33618008DB465 /* Xdebug.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACC9B77A1FE33618008DB465 /* Xdebug.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACC9B7941FE336E3008DB465 /* bug.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC9B7931FE336E3008DB465 /* bug.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACC9B78C1FE33618008DB465 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACC9B75D1FE335B3008DB465 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACC9B7791FE33618008DB465;
+			remoteInfo = Xdebug;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACC9B7921FE33618008DB465 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ACC9B78E1FE33618008DB465 /* Xdebug.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ACC9B7651FE335B3008DB465 /* Remote Xdebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote Xdebug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +50,15 @@
 		ACC9B76D1FE335B3008DB465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		ACC9B76F1FE335B3008DB465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC9B7701FE335B3008DB465 /* Remote_Xdebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Remote_Xdebug.entitlements; sourceTree = "<group>"; };
+		ACC9B77A1FE33618008DB465 /* Xdebug.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Xdebug.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC9B77C1FE33618008DB465 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		ACC9B77F1FE33618008DB465 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		ACC9B7811FE33618008DB465 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		ACC9B7841FE33618008DB465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		ACC9B7861FE33618008DB465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC9B7871FE33618008DB465 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		ACC9B78B1FE33618008DB465 /* Xdebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Xdebug.entitlements; sourceTree = "<group>"; };
+		ACC9B7931FE336E3008DB465 /* bug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bug.png; path = ../../../../Downloads/bug.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +69,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACC9B7771FE33618008DB465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC9B77D1FE33618008DB465 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				ACC9B7671FE335B3008DB465 /* Remote Xdebug */,
+				ACC9B77E1FE33618008DB465 /* Xdebug */,
+				ACC9B77B1FE33618008DB465 /* Frameworks */,
 				ACC9B7661FE335B3008DB465 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC9B7651FE335B3008DB465 /* Remote Xdebug.app */,
+				ACC9B77A1FE33618008DB465 /* Xdebug.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +111,28 @@
 			path = "Remote Xdebug";
 			sourceTree = "<group>";
 		};
+		ACC9B77B1FE33618008DB465 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACC9B77C1FE33618008DB465 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACC9B77E1FE33618008DB465 /* Xdebug */ = {
+			isa = PBXGroup;
+			children = (
+				ACC9B77F1FE33618008DB465 /* SafariExtensionHandler.swift */,
+				ACC9B7811FE33618008DB465 /* SafariExtensionViewController.swift */,
+				ACC9B7831FE33618008DB465 /* SafariExtensionViewController.xib */,
+				ACC9B7861FE33618008DB465 /* Info.plist */,
+				ACC9B7931FE336E3008DB465 /* bug.png */,
+				ACC9B7871FE33618008DB465 /* script.js */,
+				ACC9B78B1FE33618008DB465 /* Xdebug.entitlements */,
+			);
+			path = Xdebug;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,15 +143,34 @@
 				ACC9B7611FE335B3008DB465 /* Sources */,
 				ACC9B7621FE335B3008DB465 /* Frameworks */,
 				ACC9B7631FE335B3008DB465 /* Resources */,
+				ACC9B7921FE33618008DB465 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ACC9B78D1FE33618008DB465 /* PBXTargetDependency */,
 			);
 			name = "Remote Xdebug";
 			productName = "Remote Xdebug";
 			productReference = ACC9B7651FE335B3008DB465 /* Remote Xdebug.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ACC9B7791FE33618008DB465 /* Xdebug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACC9B78F1FE33618008DB465 /* Build configuration list for PBXNativeTarget "Xdebug" */;
+			buildPhases = (
+				ACC9B7761FE33618008DB465 /* Sources */,
+				ACC9B7771FE33618008DB465 /* Frameworks */,
+				ACC9B7781FE33618008DB465 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Xdebug;
+			productName = Xdebug;
+			productReference = ACC9B77A1FE33618008DB465 /* Xdebug.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -91,6 +183,10 @@
 				ORGANIZATIONNAME = "Mykola Bespaliuk";
 				TargetAttributes = {
 					ACC9B7641FE335B3008DB465 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					ACC9B7791FE33618008DB465 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -110,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				ACC9B7641FE335B3008DB465 /* Remote Xdebug */,
+				ACC9B7791FE33618008DB465 /* Xdebug */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +221,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACC9B7781FE33618008DB465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC9B7941FE336E3008DB465 /* bug.png in Resources */,
+				ACC9B7851FE33618008DB465 /* SafariExtensionViewController.xib in Resources */,
+				ACC9B7881FE33618008DB465 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,7 +242,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACC9B7761FE33618008DB465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC9B7821FE33618008DB465 /* SafariExtensionViewController.swift in Sources */,
+				ACC9B7801FE33618008DB465 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACC9B78D1FE33618008DB465 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACC9B7791FE33618008DB465 /* Xdebug */;
+			targetProxy = ACC9B78C1FE33618008DB465 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ACC9B76C1FE335B3008DB465 /* MainMenu.xib */ = {
@@ -144,6 +268,14 @@
 				ACC9B76D1FE335B3008DB465 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		ACC9B7831FE33618008DB465 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACC9B7841FE33618008DB465 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,6 +390,7 @@
 		ACC9B7741FE335B3008DB465 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Remote Xdebug/Remote_Xdebug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -273,6 +406,7 @@
 		ACC9B7751FE335B3008DB465 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Remote Xdebug/Remote_Xdebug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -281,6 +415,34 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Remote-Xdebug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		ACC9B7901FE33618008DB465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Xdebug/Xdebug.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Xdebug/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Remote-Xdebug.Xdebug";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		ACC9B7911FE33618008DB465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Xdebug/Xdebug.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Xdebug/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Remote-Xdebug.Xdebug";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -302,6 +464,15 @@
 			buildConfigurations = (
 				ACC9B7741FE335B3008DB465 /* Debug */,
 				ACC9B7751FE335B3008DB465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACC9B78F1FE33618008DB465 /* Build configuration list for PBXNativeTarget "Xdebug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC9B7901FE33618008DB465 /* Debug */,
+				ACC9B7911FE33618008DB465 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
